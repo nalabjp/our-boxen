@@ -21,10 +21,6 @@ class people::nalabjp {
     'MacVim':
       source => "http://macvim-kaoriya.googlecode.com/files/macvim-kaoriya-20121213.dmg",
       provider => pkgdmg;
-
-    'GitHub4Mac':
-      source => "https://central.github.com/mac/latest",
-      provider => compressed_app;
   }
 
   $home     = "/Users/${::luser}"
