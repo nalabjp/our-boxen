@@ -1,9 +1,5 @@
 class people::nalabjp {
-  include skype
-  include chrome
   include mongodb
-  include dropbox
-  include alfred
 
   package {
     [
@@ -14,13 +10,13 @@ class people::nalabjp {
 
   package {
     # install by URL
-    'XtraFinder':
-      source => "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
-      provider => pkgdmg;
+    #'XtraFinder':
+    #  source => "http://www.trankynam.com/xtrafinder/downloads/XtraFinder.dmg",
+    #  provider => pkgdmg;
     
-    'MacVim':
-      source => "http://macvim-kaoriya.googlecode.com/files/macvim-kaoriya-20121213.dmg",
-      provider => pkgdmg;
+    #'MacVim':
+    #  source => "http://macvim-kaoriya.googlecode.com/files/macvim-kaoriya-20121213.dmg",
+    #  provider => pkgdmg;
   }
 
   $home     = "/Users/${::luser}"
